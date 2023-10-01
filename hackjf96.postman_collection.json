@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "8b42d78d-bf7f-4bb5-a5ac-5e46cd449c72",
+		"name": "hackjf96",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19799212"
+	},
+	"item": [
+		{
+			"name": "Crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"DNI\":\"dsak21310sa\",\r\n    \"name\":\"Juan\",\r\n    \"lastname\":\"Gomez\",\r\n    \"birthDate\":\"2023-09-28T02:16:04.239\",\r\n    \"role\":\"admin\",\r\n    \"phone\":\"319023622\",\r\n    \"email\":\"correo@correo.com\",\r\n    \"password\":\"2133243\",\r\n    \"userName\":\"Juasne12\",\r\n    \"clients\":[{\"name\":\"Juan\"},{\"name\":\"Andres\"}]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7777/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7777/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Usuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7777/api/user/6514f577b9fef02fe309cbc9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"api",
+						"user",
+						"6514f577b9fef02fe309cbc9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"DNI\":\"dsak21310sa\",\r\n    \"name\":\"Juan\",\r\n    \"lastname\":\"Gomez\",\r\n    \"birthDate\":\"2023-09-28T02:16:04.239\",\r\n    \"role\":\"client\",\r\n    \"phone\":\"319023622\",\r\n    \"email\":\"correo@correo.com\",\r\n    \"password\":\"2133243\",\r\n    \"userName\":\"Juasne12\",\r\n    \"clients\":[{\"name\":\"Juan\"},{\"name\":\"Andres\"}]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7777/api/user/6514f577b9fef02fe309cbc9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"api",
+						"user",
+						"6514f577b9fef02fe309cbc9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Usuario",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7777/api/user/6514f577b9fef02fe309cbc9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"api",
+						"user",
+						"6514f577b9fef02fe309cbc9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
